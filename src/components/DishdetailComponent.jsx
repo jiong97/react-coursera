@@ -41,8 +41,8 @@ export default class DishdetailComponent extends Component {
   }
 
   render() {
-    if (this.props.selectedDish === null) {
-      return <div></div>;
+    if (this.props.selectedDish === null || this.props.selectedDish === undefined) {
+      return <div>No Dish selected!</div>;
     } else {
       return (
         <div className="row">
